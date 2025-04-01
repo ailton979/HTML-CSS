@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-image: linear-gradient(to left, #8c52ff, #4E00EB);
+    color: hsl(#000000);
+    font-size: 12pt;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;    
+}
+span:hover {
+    color: #533296;
+}
+main {
+background-color: white;
+border-radius: 06px;
+width: 1000px;
+padding: 20px;
+margin: auto;
+}
+h1, h2, a {
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    font-weight: 500;
+    text-align: justify;
+}
