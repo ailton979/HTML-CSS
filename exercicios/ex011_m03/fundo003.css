@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 5px auto;
+}
+body {
+    background-image: url('imagens/wallpaper006.jpg');
+    background-repeat: repeat;
+    display: auto;
+    
+}
+div.quadrado {
+    background-image: url('imagens/wallpaper003.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 1280px;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+}
+div#q1 {
+    background-position: left top;
+}
+div#q2 {
+    background-position: left center;
+}
+div#q3 {
+    background-position: left bottom;
+}
