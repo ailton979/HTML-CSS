@@ -4,6 +4,10 @@
     src: url(Montserrat-Regular.ttf) format('opentype');
     font-weight: normal;
 }
+* {
+    margin: 10px;
+    padding: 0px;
+}
 html {
     margin: 0px;
 }
@@ -20,11 +24,8 @@ html {
     --font-Montserrat-Regular: 'Montserrat-Regular';
  
 }
-* {
-    margin: 10px;
-    padding: 0px;
-}
 body {
+    min-height: 100vh;
     font-family: var(--font-Montserrat-Regular);
     background-color: #322b415b;
     margin: 0px 0px;
@@ -42,6 +43,39 @@ header {
 header > h1 {
     font-size: 3em;
     font-weight: bold;
+}
+section#header{
+    padding-top: 28px;
+    border-radius: 10px 0px;
+    font-variant: small-caps;
+    background-color: white;
+    text-align: center;
+}
+p#milton {
+    padding-bottom: 28px;
+    text-align: center;
+}
+section.normal > p {
+    line-height: 2em;
+}
+section.normal, section.image {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 38px;
+}
+section.normal {
+    background-color: var(--cor3);
+    
+}
+section.image {
+    background-color: var(--cor4);
+    
+}
+section.image > p {
+    color: white;
+    line-height: 2em;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.616);
 }
 nav {
     text-align: center;
@@ -104,7 +138,7 @@ nav > a:hover {
     transform: translateY(7px);
 }
 main {
-    background-color: burlywood;
+    background-color: #8c52ff3f;
     margin: auto;
     margin-top: 5px;
     margin-bottom: 20px;
