@@ -135,6 +135,12 @@ main section#produtos div {
     margin: 5px;
     padding: 5px;
 }
+div.contat {
+    min-width: 250px;
+}
+div#contat {
+    min-width: 520px;
+}
 article.block {
     background-color: var(--cor1b);
     margin-top: 3px;
