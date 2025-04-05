@@ -19,14 +19,26 @@
             height: 400px;
         }
         .dois {
-            max-width: 215px;
-            min-width: 215px;
+            max-width: 213px;
+            min-width: 213px;
         }
         thead#tabela {
             
             border: 1px solid black;
             border-radius: 4px;
             padding: 3px;
+        }
+        .boletim {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .meida {
+            
+            vertical-align: middle;
+        }
+        div.container {
+            overflow-x: auto;
+            
         }
         tr {
             background-color: rgba(126, 252, 0, 0.671);
@@ -71,7 +83,7 @@
     <main>
     <h2>Olha que legal</h2>
     <article>
-        <div>
+        <div class="container">
             <table>
                 <thead id="tabela" >
                     <tr colspan="3">
@@ -112,7 +124,7 @@
     </article>
     <H2>Tabela Dois</H2>
     <article>
-        <div>
+        <div class="container">
             <table id="dois">
                 <tr>
                     <td class="dois">1</td>
@@ -148,7 +160,7 @@
     </article>
     <H2>Tabela Três</H2>
     <article>
-        <div>
+        <div class="container">
             <table>
                 <tr>
                     <td colspan="4">A</td>
@@ -180,7 +192,7 @@
     </article>
     <H2>Tabela Quatro</H2>
     <article>
-        <div>
+        <div class="container">
             <table>
                 <caption>Filmes Favoritos</caption>
                 <thead>
@@ -239,78 +251,72 @@
     </article>
     <H2>Desafio</H2>
     <article>
-        <div>
+        <div class="container">
             <table>
-                <caption>Notas</caption>
-                <thead>
-                    <tr>
-                        <th rowspan="2">Área</th>
-                        <th rowspan="2">Disciplinas</th>
-                        <th colspan="2">Notas</th>
-                        
-                        <th rowspan="2">Média</th>
-                    </tr>
-                </thead>
+                <caption>Boletim</caption>
+                
                 <tbody>
                     <tr>
-                        <th>
-                            Exatas
-                        </th>
+                        <th class="boletim" rowspan="2" scope="col">Área</th>
+                        <th class="boletim" rowspan="2" scope="col">Disciplinas</th>
+                            
+                        <th class="boletim" colspan="2" scope="colgroup">Notas</th>                            
+                        <th class="boletim" rowspan="2" scope="col">Média</th>
+                    </tr>
+                    <tr>                       
+                        <td class="boletim">Nota 1</td>
+                        <td class="boletim">Nota 2</td>
                     </tr>
                     <tr>
-                        <td>Matemática</td>
-                        <td>Física</td>
-                        <td>Química</td>
-                        <td>Biologia</td>
+                        <th class="boletim" rowspan="4" scope="rowgroup">Exatas</th>
+                            <td class="boletim">Matemática</td>
+                            <td class="boletim">0.0</td>
+                            <td class="boletim">0.0</td>
+                            <td class="boletim">0.0</td>
+                    </tr>
+                    <tr>                        
+                        <td class="boletim">Física</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                    </tr>
+                    <tr>                        
+                        <td class="boletim">Química</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                    </tr>
+                    <tr>                        
+                        <td class="boletim">Biologia</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
                     </tr>
                     <tr>
-                        <th scope="col">Nota 1</th>
-                            <td>0.0</td>
-                            <td>0.0</td>
-                            <td>0.0</td>
+                        <th class="media" colspan="4" scope="row">Média das Exatas</th>
+                        <td class="boletim">0.0</td>          
+                        
+                    
                     </tr>
                     <tr>
-                        <th scope="col">Nota 2</th>
-                            <td>0.0</td>
-                            <td>0.0</td>
-                            <td>0.0</td>
+                        <th class="boletim" rowspan="2" scope="rowgroup">Humanas</t>
+                        <td class="boletim">História</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                    </tr>
+                    <tr>                        
+                        <td class="boletim">Geografia</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
+                        <td class="boletim">0.0</td>
                     </tr>
                     <tr>
-                        <td>Beatriz Souza</td>
-                        <td>Hulk</td>
-                        <td>Inception</td>
-                        <td>Batman</td>
-                    </tr>
-                    <tr>
-                        <td>Cláudia Melo</td>
-                        <td>Oblivion</td>
-                        <td>Matrix</td>
-                        <td>Big Hero</td>
-                    </tr>
-                    <tr>
-                        <th rowspan="3" scope="rowgroup">Homens</th>
-                        <td>Bruno Mendonça</td>
-                        <td>Intocáveis</td>
-                        <td>Amnésia</td>
-                        <td>Gladiador</td>
-                    </tr>
-                    <tr>
-                        <td>Daniel Lourenço</td>
-                        <td>Wall-E</td>
-                        <td>Oldboy</td>
-                        <td>Daniel</td>
-                    </tr>
-                    <tr>
-                        <td>Fabiano Mota</td>
-                        <td>Star Wars</td>
-                        <td>Taxi Driver</td>
-                        <td>Toy Story</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <th colspan="4" scope="row">Total</th>
-                    <td>1000</td>
-                </tfoot>
+                        <th class="media" colspan="4" scope="row">Média de Humanas</th>
+                        
+                        <td>0.0</td>
+                    </tr>                    
+                </tbody>                
             </table>
         </div>
     </article>
