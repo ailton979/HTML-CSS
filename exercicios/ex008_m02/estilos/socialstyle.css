@@ -120,6 +120,26 @@ section#telefone {
     
     background: url('../imagens/frame-iphone.png') no-repeat;
 }
+section#redes img:active {
+    transform: scale(95%);
+}
+section#redes {
+    text-align: right;
+}
+section#redes img{
+    
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+    box-sizing: border-box;
+}
+section#redes img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.418);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+    transition: 0.4s border 0.1s;
+}
 iframe#tela {
     position: relative;
     top: 80px;
