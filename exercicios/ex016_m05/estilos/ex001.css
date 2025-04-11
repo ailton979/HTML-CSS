@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* 
+flex-direction 
+    row; ==>
+    row-reverse; <==
+flex-direction 
+    column; (cima para baixo)
+    column; (baixo para cima)
+
+    eixos (axis)
+
+        flex-direction: row
+            main-axis
+                main-start (normal)
+                main-end
+            cross-axis
+                cross-star (cima para baixo)
+                cross-end
+
+        flex-direction: row-reverse
+            main-axis
+                main-start (inevertido)
+                main-end 
+            cross-axis
+                cross-star (cima para baixo)
+                cross-end
+        
+        flex-direction: column;
+            cross-axis
+                cross-star (direita para esquerda)
+                cross-end
+            main-axis
+                main-start (cima para baixo)
+                main-end
+        
+        flex-direction: column-reverse;
+            cross-axis
+                cross-star (direita para esquerda)
+                cross-end
+            main-axis
+                main-start (baixo para cima)
+                main-end
+
+flex-wrap
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+*/
+
+div.conteiner {
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+div.iten {
+    background-color: lawngreen;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}

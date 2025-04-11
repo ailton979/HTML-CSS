@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(Montserrat-Regular.ttf) format('opentype');
+    font-weight: normal;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    margin: 0px;
+}
+:root {
+    --cor0: #8c52ff;
+    --cor1: #4E00EB;
+    --cor1b: #322b415b;
+    --cor2: #533296;
+    --cor3: #47366B;
+    --cor4: hsl(259, 20%, 21%);
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-Montserrat-Regular: 'Montserrat-Regular';
+ 
+}
+body {
+    font-family: var(--font-Montserrat-Regular);
+    background-color: #322b415b;
+    margin: 0px 0px;
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1b));
+    font-family: var(--font-Montserrat-Regular);
+    margin: 0%;
+    width: auto;
+    background-color: white;
+    min-height: 100px;
+    padding-top: 30px;
+    padding: 20px;
+}
+header > h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+nav {
+    text-align: center;
+    background-color: #47366bcc;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.486);
+}
+nav > a {
+    width: 140px;
+    height: 45px;
+    margin: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 500px;
+    margin-right: 30px;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    box-shadow: 0px 15px 20px rgba(46, 73, 229, 0.4);
+    text-decoration: none;
+    background-color: var(--cor0);
+    color: white;
+    transform: translateY(7px);
+}
+main.container {
+    border: 2px solid black;
+    display: flex;
+}
+main.iten {
+    border: 20px solid rgb(204, 18, 18);
+    flex: auto;
+}
+main a {
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    margin-right: 12px;
+    padding: 0%;
+}
+a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+p#rodape {
+    text-align: center;
+    margin: 0px;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    text-align: center;
+    background-color: var(--cor2);
+    color: white;   
+    padding: 5px;
+    margin: 0px;
+}
