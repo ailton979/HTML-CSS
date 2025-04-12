@@ -1,16 +1,33 @@
 @charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+}
 
 div.conteiner {
     background-color: aqua;
     
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 div.iten {
     background-color: lawngreen;
     border: 1px solid black;
+    margin: 5px;
     text-align: center;
-    
+    flex: auto;
     padding: 10px;
+}
+div#bloco-ag {
+    width: 100vw;
+}
+div#bloco-bf {
+    max-width: 200px;
+    height: 400px;
+
+}
+div#bloco-cde {
+    background-color: green;
+    max-width: 500px;
 }

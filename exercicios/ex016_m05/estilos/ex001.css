@@ -7,6 +7,21 @@ flex-direction
     column; (cima para baixo)
     column; (baixo para cima)
 
+justify-content: 
+    flex-star;
+    flex-end;
+    center;
+    space-between; (elementos grudados nas laterais e espaço entre eles iguais)
+    space-evenly; (espaços evolta deles iguais entre eles)
+    space-around; (cria uma caixa e centraliza eles dentro deles)
+
+align-itens: flex-start
+    flex-star;
+    flex-end;
+    center;
+    
+
+
     eixos (axis)
 
         flex-direction: row
