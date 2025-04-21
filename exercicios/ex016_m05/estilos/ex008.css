@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+}
+div.conteiner {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: auto;
+    height: 400px;
+}
+
+div.iten {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+div#i1 {
+    width: 100vw;
+}
+div#i2 {
+    align-self: stretch;
+}
+div#i3 {    
+    align-self: center;
+}
+div#i4 {
+    align-self: center;
+}
+div#i5 {
+    align-self: center;
+}
+div#i6 {
+    align-self: stretch;
+}
+div#i7 {
+    width: 100vw;
+}
