@@ -11,6 +11,40 @@
     display: flex;
     flex-direction: column;
   }
+  h1 {
+    text-align: left;
+  }
+  .botoes {
+    margin: 0;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+  }
+  button > a {
+    text-decoration: none;
+    color: black;
+  }
+  .button {
+    height: 30px;
+    width: 95px;
+    margin: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgba(206, 55, 55, 0);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  .button:hover {
+    background-color: #ffd9007e;
+    box-shadow: 0px 10px 15px #ffdf2c9a;
+    color: #fff;
+    transform: translateY(3px);
+  } 
   
   .header, .footer {
     background-color: #333;
@@ -24,6 +58,13 @@
     flex: 1;
     gap: 1rem;
     padding: 1rem;
+  }
+  .banner {
+    background-color: #ffd700;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    
   }
   
   .content {
@@ -65,21 +106,21 @@
       padding: 0.8rem;
     }
     /* layout principal */
-.layout {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-  }
+    .layout {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1rem;
+    }
   
   /* banners padrão (mobile) */
-  .banner {
-    background-color: #ffd700;
-    text-align: center;
-    padding: 1rem;
-    font-weight: bold;
-    
-  }
+    .banner {
+      background-color: #ffd700;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+      
+    }
   
   /* main como coluna no mobile */
   .main {
