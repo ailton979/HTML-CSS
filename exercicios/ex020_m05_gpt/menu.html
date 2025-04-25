@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Menu | Hamburguer</title>
+    <style>
+      .menu {
+        display: none;
+        list-style: none;
+        padding: 0;
+      }
+
+      .menu.active {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+          <button id="btn-mobile">Menu</button>
+          <ul id="menu" class="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+  btnMobile.addEventListener('click', () => {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
