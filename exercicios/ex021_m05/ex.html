@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteudo Flex</title>
+    <title>Conteúdo Flex</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <h1>Exemplo de comteudo flexível</h1>
+    <header class="normal">
+        <h1>Exemplo de conteudo flexível</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolore libero aliquam omnis perferendis quam, provident velit, at dicta laboriosam maiores quo? Eaque repellendus harum facilis, laudantium optio ut beatae!</p>
     </header>
     <main>
-        <h2>Elemento Media->Text</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore at illo est maiores mollitia commodi saepe animi, quaerat itaque ut. Facilis, sapiente eaque aspernatur cupiditate debitis ea non animi!</p>
-        <h2>Elemento Text->Media</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores consequuntur, vel hic, consequatur adipisci magnam unde voluptates est sint obcaecati provident iste corrupti aliquam architecto laudantium ipsum nam a.</p>
+        <section class="flex-content">
+            <article class="media-text">
+                <div class="text">
+                    <h2>Elemento Media->Text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore at illo est maiores mollitia commodi saepe animi, quaerat itaque ut. Facilis, sapiente eaque aspernatur cupiditate debitis ea non animi!</p>
+                </div>
+                <div class="media">
+                    <img src="style/imagen_noticias_250x250.jpg" alt="conteudo flex">
+                </div>
+            </article>
+            <article class="text-media">
+                <div class="text">
+                    <h2>Elemento Text->Media</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores consequuntur, vel hic, consequatur adipisci magnam unde voluptates est sint obcaecati provident iste corrupti aliquam architecto laudantium ipsum nam a.</p>
+                </div>
+                <div class="meida">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=Y37APtQ5DnXFqp04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>            
+        </section>
+        <section class="normal">
+           <h2>Conteúdo Normal</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima tenetur aperiam debitis error, quis rerum autem repudiandae impedit, praesentium tempora aspernatur quos sunt voluptas reprehenderit? Optio minima architecto iusto deserunt.</p>
+        </section>       
     </main>
     <footer>Todos os direitos reservados. | 2025</footer>
 </body>
