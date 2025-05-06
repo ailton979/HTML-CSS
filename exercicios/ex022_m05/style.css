@@ -1,0 +1,22 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    border: 2px solid black;
+    margin: 2px;
+}
+div.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    gap: 3px;
+
+    text-align: center;
+    
+
+}
+div.item {
+    border: 1px solid black;
+}
